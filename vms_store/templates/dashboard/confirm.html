@@ -1,0 +1,1 @@
+{% extends 'dashboard/base.html' %}{% block content %}<section class="box formbox"><span class="badge cancelled">PERMANENT ACTION</span><h2>{{ title }}: {{ object }}</h2><p>{{ explanation }}</p><form method="post">{% csrf_token %}<button class="dangerbutton">Confirm delete</button><a class="secondary" href="{{ back }}">Keep it</a></form></section>{% endblock %}
